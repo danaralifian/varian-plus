@@ -1,7 +1,7 @@
 import { getProductImages, getProducts } from "@/apis/product";
-import About from "@/components/about";
-import Banner from "@/components/banner";
-import ProductList from "@/components/product-list";
+import About from "@/sections/about";
+import Banner from "@/sections/banner";
+import ProductList from "@/sections/product-list";
 
 export default async function Home() {
   const products = await getProducts()

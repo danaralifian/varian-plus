@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from '../product-card'
+import ProductCard from '@/components/product-card'
 import IProduct from '@/models/product'
 import IProductImage from '@/models/product-image'
 
@@ -14,7 +14,7 @@ export default function ProductList({ products, productImages }: IProps) {
     }
 
     return (
-        <div className='space-y-6 container'>
+        <div className='space-y-6 container' id='our-products'>
             <div className='rounded-full w-fit p-2 px-4 bg-lime-100 mx-auto'>
                 <h2 className='text-sm md:text-lg font-bold w-fit title-gradient text-center'>Our Products</h2>
             </div>
