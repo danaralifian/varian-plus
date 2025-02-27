@@ -3,12 +3,10 @@ import MENUS from '@/constants/menus'
 import { cn, scrollTo, scrollToTop } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false)
-    const router = useRouter()
 
     useEffect(() => {
         scrollTo()
