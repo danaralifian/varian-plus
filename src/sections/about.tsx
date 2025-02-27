@@ -27,7 +27,7 @@ export default function About() {
         {Array.from({ length: 3 }).map((_, index) => (
           <div key={index} className='space-y-4 border border-lime-300 rounded-md p-4 hover:border-lime-500 shadow-lg shadow-lime-200/20 transition duration-300'>
             <Layers className='mx-auto text-lime-400' size={64} />
-            <h4 className='text-base font-semibold text-center'>Lorem Ipsum</h4>
+            <h3 className='text-base font-semibold text-center'>Lorem Ipsum</h3>
             <p className='text-justify text-sm text-gray-600'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero vel culpa maxime labor, itaque reprehenderit cupiditate ullam beatae fugiat soluta. Vitae similique dolores dolor rerum nisi eius? Ipsa, expedita.
             </p>
