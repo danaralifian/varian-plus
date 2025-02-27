@@ -2,7 +2,6 @@ import { getProductImages, getProducts } from "@/apis/product";
 import About from "@/components/about";
 import Banner from "@/components/banner";
 import ProductList from "@/components/product-list";
-import Image from "next/image";
 
 export default async function Home() {
   const products = await getProducts()
