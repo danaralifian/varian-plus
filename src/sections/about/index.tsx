@@ -4,8 +4,8 @@ import React from 'react'
 export default function About() {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 container items-center' id='about-us'>
-      <Image src='/images/business.webp' alt='about' width={500} height={500} className='w-full rounded-md object-cover animate-fadeinup' />
-      <div className='space-y-4 animate-fadeinup'>
+      <Image src='/images/business.webp' alt='about' width={500} height={500} className='w-full rounded-md object-cover' />
+      <div className='space-y-4'>
         <div className='rounded-full w-fit p-2 px-4 bg-lime-100'>
           <h2 className='text-sm md:text-lg font-bold w-fit title-gradient'>About Us</h2>
         </div>

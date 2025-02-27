@@ -16,13 +16,13 @@ export default function ProductCard({ image, productName, productId }: IProps) {
     return (
         <>
             <div className='bg-white rounded-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition duration-300 ease-in-out'>
-                <div className='h-48 cursor-pointer' onClick={() => setIsOpen(true)}>
+                <div className='h-48 cursor-pointer overflow-hidden rounded-t-lg' onClick={() => setIsOpen(true)}>
                     <Image
                         src={image}
                         alt={productName || 'product image'}
                         width={768}
                         height={450}
-                        className='object-cover w-full h-full rounded-t-lg' />
+                        className='object-cover w-full h-full hover:scale-110 transition-all duration-300 ease-in-out' />
                 </div>
                 <div className='p-2'>
                     <p className='text-gray-600 text-sm'>ID: {productId}</p>
