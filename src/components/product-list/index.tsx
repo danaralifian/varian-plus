@@ -25,8 +25,7 @@ export default function ProductList({ products, productImages }: IProps) {
                 {products.map((product) => (
                     <ProductCard
                         key={product.id}
-                        src={productImage(product.id)}
-                        alt={product.name}
+                        image={productImage(product.id)}
                         productName={product.name}
                         productId={product.id}
                     />

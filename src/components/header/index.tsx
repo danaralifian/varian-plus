@@ -1,6 +1,7 @@
 "use client"
 import MENUS from '@/constants/menus'
 import { cn } from '@/lib/utils'
+import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import React, { useState } from 'react'
 
@@ -18,7 +19,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className='cursor-pointer block md:hidden' onClick={() => setIsOpen(!isOpen)}>
-                    <Image src='/menu.webp' alt='menu' className='w-6 h-6' width={64} height={64} />
+                    <Menu />
                 </div>
             </div>
             {/* Drawer */}
