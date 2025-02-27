@@ -1,0 +1,18 @@
+import Image from 'next/image'
+import React from 'react'
+
+export default function Banner() {
+    return (
+        <div className='relative'>
+            <Image src='/images/banner-furniture.webp' alt='banner' className='w-full h-auto brightness-[40%]' width={1920} height={600} />
+            <div className='container absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2'>
+                <div className=''>
+                    <h2 className='text-xl md:text-4xl font-bold mb-4 text-white text-center'>Welcome to <span className='text-lime-300'>VarianPlus</span></h2>
+                    <p className='text-sm md:text-xl text-white text-center'>
+                        We strive to bring variety and convenience to you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    )
+}

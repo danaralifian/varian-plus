@@ -18,3 +18,10 @@ body {
     text-wrap: balance;
   }
 }
+
+.title-gradient {
+  background: #4d7c0f;
+  background: linear-gradient(to right, #4d7c0f 0%, #84cc16 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
