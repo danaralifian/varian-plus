@@ -1,23 +1,28 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function ProductCard() {
+interface IProps {
+    src: string
+    alt: string
+    productName: string
+    productId: number
+}
+export default function ProductCard({ src, alt, productName, productId }: IProps) {
     return (
-        <div className='bg-white rounded-lg shadow-md'>
+        <div className='bg-white rounded-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition duration-300 ease-in-out'>
             <div className='h-48 cursor-pointer'>
                 <Image
-                    src={'https://static7.depositphotos.com/1050070/691/i/950/depositphotos_6910790-stock-photo-mother-and-child-walking-on.jpg'}
-                    alt={''}
+                    src={src}
+                    alt={alt || 'product image'}
                     width={768}
                     height={450}
-                    // sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                     className='object-cover w-full h-full rounded-t-lg' />
             </div>
             <div className='p-2'>
-                <h3 className='text-xl font-semibold'>
-                    product name
+                <p className='text-gray-600 text-base'>ID: {productId}</p>
+                <h3 className='text-lg font-semibold line-clamp-2'>
+                    {productName}
                 </h3>
-                <p className='text-gray-600 text-base'>ID: 01</p>
             </div>
         </div>
     )

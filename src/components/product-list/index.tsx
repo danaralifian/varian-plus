@@ -1,9 +1,20 @@
 import React from 'react'
 import ProductCard from '../product-card'
+import IProduct from '@/models/product'
+import IProductImage from '@/models/product-image'
 
-export default function ProductList() {
+interface IProps {
+    products: IProduct[]
+    productImages: IProductImage[]
+}
+
+export default function ProductList({ products, productImages }: IProps) {
+    const productImage = (productId: number) => {
+        return productImages.find((image) => image.id.includes(productId.toString()))?.image || '/images/placeholder.webp'
+    }
+
     return (
-        <div className='space-y-6'>
+        <div className='space-y-6 container'>
             <div className='rounded-full w-fit p-2 px-4 bg-lime-100 mx-auto'>
                 <h2 className='text-sm md:text-lg font-bold w-fit title-gradient text-center'>Our Products</h2>
             </div>
@@ -11,7 +22,15 @@ export default function ProductList() {
                 Lorem ipsum dolor sit amet consectetur. <br />commodi temporibus?
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <ProductCard />
+                {products.map((product) => (
+                    <ProductCard
+                        key={product.id}
+                        src={productImage(product.id)}
+                        alt={product.name}
+                        productName={product.name}
+                        productId={product.id}
+                    />
+                ))}
             </div>
         </div>
     )
