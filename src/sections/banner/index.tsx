@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <div className='relative'>
+        <section className='relative'>
             <Image src='/images/banner-furniture.webp' alt='banner' className='w-full h-auto brightness-[40%]' width={1920} height={600} />
             <div className='container absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2'>
                 <div className=''>
@@ -13,6 +13,6 @@ export default function Banner() {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
