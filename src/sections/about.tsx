@@ -9,7 +9,7 @@ export default function About() {
         <Image src='/images/business.webp' alt='about' width={760} height={407} className='w-full rounded-md object-cover' />
         <div className='space-y-4'>
           <div className='rounded-full w-fit p-2 px-4 bg-lime-100 mx-auto lg:mx-0'>
-            <h2 className='text-sm md:text-lg font-bold w-fit title-gradient'>About Us</h2>
+            <h2 className='text-lg font-bold w-fit title-gradient'>About Us</h2>
           </div>
           <p className='text-xl md:text-3xl font-bold'>
             Experience the perfect combination of quality and service

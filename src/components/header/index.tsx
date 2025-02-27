@@ -47,10 +47,13 @@ export default function Header() {
                     'translate-x-0': isOpen,
                     'translate-x-full': !isOpen
                 })}>
-                    <Image src='/logo.svg' alt='logo varian plus' className='w-auto h-6 md:h-8' width={'100'} height={100} onClick={handleToTop} />
-                    <ul className='space-y-2 list-none mt-8'>
-                        {MENUS.map((menu, index) => <li key={index} className='bg-lime-100 p-2 px-4 rounded-md cursor-pointer font-bold' onClick={() => handleClickMenu(menu.href)}>{menu.name}</li>)}
-                    </ul>
+                    <div className='space-y-4'>
+                        <Image src='/logo.svg' alt='logo varian plus' className='w-auto h-6 md:h-8' width={'100'} height={100} onClick={handleToTop} />
+                        <hr />
+                        <ul className='space-y-2 list-none mt-8'>
+                            {MENUS.map((menu, index) => <li key={index} className='p-2 rounded-md cursor-pointer font-bold' onClick={() => handleClickMenu(menu.href)}>{menu.name}</li>)}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>

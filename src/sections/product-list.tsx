@@ -16,7 +16,7 @@ export default function ProductList({ products, productImages }: IProps) {
     return (
         <section className='space-y-6 container' id='our-products'>
             <div className='rounded-full w-fit p-2 px-4 bg-lime-100 mx-auto'>
-                <h2 className='text-sm md:text-lg font-bold w-fit title-gradient text-center'>Our Products</h2>
+                <h2 className='text-lg font-bold w-fit title-gradient text-center'>Our Products</h2>
             </div>
             <p className='text-xl md:text-3xl font-bold text-center'>
                 Lorem ipsum dolor sit amet consectetur. <br />commodi temporibus?

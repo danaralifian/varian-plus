@@ -29,10 +29,10 @@ export default function ProductCard({ image, productName, productId }: IProps) {
                         className='object-cover w-full h-full hover:scale-110 transition-all duration-300 ease-in-out' />
                 </div>
                 <div className='p-2 px-4'>
-                    <p className='text-gray-600 text-sm'>ID: {productId}</p>
-                    <h3 className='text-base font-semibold line-clamp-2'>
+                    <span className='text-gray-600 text-xs font-medium'>ID: {productId}</span>
+                    <p className='text-sm font-semibold line-clamp-2'>
                         {productName}
-                    </h3>
+                    </p>
                 </div>
             </div>
             <Modal
@@ -40,7 +40,7 @@ export default function ProductCard({ image, productName, productId }: IProps) {
                 onClose={() => setIsOpen(false)}>
                 <div className='space-y-6'>
                     <div className='flex items-center justify-between'>
-                        <h3 className='text-lg font-semibold'>
+                        <h3 className='text-base font-semibold'>
                             {productName}
                         </h3>
                         <Button variant='transparent' onClick={() => setIsOpen(false)}>
