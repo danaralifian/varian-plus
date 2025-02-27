@@ -25,8 +25,8 @@ export default function ProductCard({ image, productName, productId }: IProps) {
                         className='object-cover w-full h-full rounded-t-lg' />
                 </div>
                 <div className='p-2'>
-                    <p className='text-gray-600 text-base'>ID: {productId}</p>
-                    <h3 className='text-lg font-semibold line-clamp-2'>
+                    <p className='text-gray-600 text-sm'>ID: {productId}</p>
+                    <h3 className='text-base font-semibold line-clamp-2'>
                         {productName}
                     </h3>
                 </div>
