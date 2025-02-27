@@ -16,7 +16,7 @@ export default function ProductCard({ image, productName, productId }: IProps) {
     return (
         <>
             <div
-                className='bg-white rounded-lg border cursor-pointer border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition duration-300 ease-in-out'
+                className='bg-white rounded-lg border cursor-pointer border-gray-100 hover:shadow-lg hover:-translate-y-1 transition duration-300 ease-in-out'
                 onClick={() => setIsOpen(true)}>
                 <div className='h-48 overflow-hidden rounded-t-lg'>
                     <Image
@@ -26,7 +26,7 @@ export default function ProductCard({ image, productName, productId }: IProps) {
                         height={450}
                         className='object-cover w-full h-full hover:scale-110 transition-all duration-300 ease-in-out' />
                 </div>
-                <div className='p-2'>
+                <div className='p-2 px-4'>
                     <p className='text-gray-600 text-sm'>ID: {productId}</p>
                     <h3 className='text-base font-semibold line-clamp-2'>
                         {productName}

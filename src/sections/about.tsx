@@ -14,22 +14,22 @@ export default function About() {
           <p className='text-xl md:text-3xl font-bold'>
             Experience the perfect combination of quality and service
           </p>
-          <p className='text-sm'>
+          <p className='text-sm text-gray-600'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse potenti. Integer ut magna nec nisl interdum placerat. Vivamus auctor, orci at sollicitudin bibendum, sapien justo viverra nisi, at fermentum ex orci ut purus. Curabitur posuere, arcu ut varius sodales, quam nulla fermentum nunc, a egestas turpis justo et nunc.
             At VarianPlus, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
           </p>
-          <p className='text-sm'>
+          <p className='text-sm text-gray-600'>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent nec lorem a magna scelerisque vestibulum. Donec dapibus, justo in vulputate scelerisque, magna nunc luctus lorem, ac vehicula risus lorem nec lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
           </p>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
         {Array.from({ length: 3 }).map((_, index) => (
-          <div key={index} className='space-y-4 border rounded-md p-4 hover:border-lime-500 hover:shadow-lg transition duration-300'>
+          <div key={index} className='space-y-4 border border-lime-300 rounded-md p-4 hover:border-lime-500 shadow-lg shadow-lime-200/20 transition duration-300'>
             <Layers className='mx-auto text-lime-400' size={64} />
             <h4 className='text-base font-semibold text-center'>Lorem Ipsum</h4>
-            <p className='text-justify text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero vel culpa maxime laboriosam, itaque reprehenderit cupiditate ullam beatae fugiat soluta. Vitae similique dolores dolor rerum nisi eius? Ipsa, expedita.
+            <p className='text-justify text-sm text-gray-600'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas libero vel culpa maxime labor, itaque reprehenderit cupiditate ullam beatae fugiat soluta. Vitae similique dolores dolor rerum nisi eius? Ipsa, expedita.
             </p>
           </div>
         ))}
