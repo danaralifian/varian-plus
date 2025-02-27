@@ -21,7 +21,7 @@ export default function ProductList({ products, productImages }: IProps) {
             <p className='text-xl md:text-3xl font-bold text-center'>
                 Lorem ipsum dolor sit amet consectetur. <br />commodi temporibus?
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 {products.map((product) => (
                     <ProductCard
                         key={product.id}
