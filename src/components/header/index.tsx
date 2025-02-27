@@ -55,7 +55,7 @@ export default function Header() {
                     <div className='space-y-4'>
                         <div className='flex items-center justify-between'>
                             <Image src='/logo.svg' alt='logo varian plus' className='w-auto h-6 md:h-8' width={'100'} height={100} onClick={handleToTop} />
-                            <Button variant={'transparent'} onClick={() => setIsOpen(false)} size={'2xs'}>
+                            <Button variant={'transparent'} title='button close' onClick={() => setIsOpen(false)} size={'2xs'}>
                                 <X />
                             </Button>
                         </div>
