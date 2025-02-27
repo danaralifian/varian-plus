@@ -22,8 +22,8 @@ export default function ProductCard({ image, productName, productId }: IProps) {
                     <Image
                         src={image}
                         alt={productName || 'product image'}
-                        width={768}
-                        height={450}
+                        width={280}
+                        height={200}
                         className='object-cover w-full h-full hover:scale-110 transition-all duration-300 ease-in-out' />
                 </div>
                 <div className='p-2 px-4'>
