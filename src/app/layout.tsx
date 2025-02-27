@@ -9,9 +9,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "VarianPlus | lorem ipsum dolor sit amet consectetur",
   description: "lorem ipsum dolor sit amet consectetur",
-  icons: {
-    icon: "/icon.png",
-  }
 };
 
 export default function RootLayout({
