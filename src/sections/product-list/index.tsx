@@ -14,7 +14,7 @@ export default function ProductList({ products, productImages }: IProps) {
     }
 
     return (
-        <div className='space-y-6 container' id='our-products'>
+        <section className='space-y-6 container' id='our-products'>
             <div className='rounded-full w-fit p-2 px-4 bg-lime-100 mx-auto'>
                 <h2 className='text-sm md:text-lg font-bold w-fit title-gradient text-center'>Our Products</h2>
             </div>
@@ -31,6 +31,6 @@ export default function ProductList({ products, productImages }: IProps) {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
