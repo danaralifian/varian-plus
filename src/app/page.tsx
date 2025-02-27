@@ -8,14 +8,12 @@ export default async function Home() {
   const productImages = await getProductImages()
 
   return (
-    <div className="space-y-10 mb-4">
+    <div className="space-y-16 mb-4">
       <Banner />
-      <section className="space-y-10">
-        <About />
-        <ProductList
-          products={products.data}
-          productImages={productImages.data} />
-      </section>
+      <About />
+      <ProductList
+        products={products.data}
+        productImages={productImages.data} />
     </div>
   );
 }

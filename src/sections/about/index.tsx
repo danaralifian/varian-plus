@@ -6,7 +6,7 @@ export default function About() {
     <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 container items-center' id='about-us'>
       <Image src='/images/business.webp' alt='about' width={500} height={500} className='w-full rounded-md object-cover' />
       <div className='space-y-4'>
-        <div className='rounded-full w-fit p-2 px-4 bg-lime-100'>
+        <div className='rounded-full w-fit p-2 px-4 bg-lime-100 mx-auto lg:mx-0'>
           <h2 className='text-sm md:text-lg font-bold w-fit title-gradient'>About Us</h2>
         </div>
         <p className='text-xl md:text-3xl font-bold'>

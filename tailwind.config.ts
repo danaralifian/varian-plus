@@ -12,7 +12,8 @@ const config: Config = {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        sm: "0rem",
+        sm: "1.5rem",
+        xl: "0rem",
       },
     },
     keyframes: {
