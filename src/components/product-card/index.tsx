@@ -1,9 +1,11 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import Modal from '../modal'
+import dynamic from 'next/dynamic'
 import { Button } from '../button'
 import { X } from 'lucide-react'
+
+const Modal = dynamic(() => import('../modal'), { ssr: false })
 
 interface IProps {
     image: string
