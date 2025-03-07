@@ -38,7 +38,7 @@ export default function ProductCard({ image, productName, productId }: IProps) {
             <Modal
                 isOpen={isOpen}
                 onClose={() => setIsOpen(false)}>
-                <div className='space-y-6'>
+                <div className='space-y-6' id={'preview'}>
                     <div className='flex items-center justify-between'>
                         <h3 className='text-base font-semibold'>
                             {productName}
@@ -47,6 +47,7 @@ export default function ProductCard({ image, productName, productId }: IProps) {
                             <X />
                         </Button>
                     </div>
+
                     <div className='relative'>
                         <Image
                             src={image}
